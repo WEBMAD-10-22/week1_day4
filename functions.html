@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+
+<body>
+    <script>
+        // FUNCTIONS 
+
+        DECLARACIÓN
+        function __getWinners(winnerName, secondWinner) {
+            return [winnerName, secondWinner] // PUEDO devolver varios datos en una estructura compleja como un Array o un Objeto
+        }
+
+        function getData() {
+            let name = 'David'
+            let age = 15
+
+            return { [name]: age } // ASÍ retornaríamos un objeto con clave "David" y valor "15"
+        }
+
+        // EXPRESIÓN
+        const getWinners = function (winnerName, secondWinner) {
+            return [winnerName, secondWinner]
+        }
+
+        // ARROW FUNCTION
+        const _getWinners = () => 'DANIEL' // las FUNCIONES FLECHA poseen retorno implícito. Es una sintaxis mucho menos abigarrada
+
+    </script>
+</body>
+
+</html>
